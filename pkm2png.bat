@@ -5,6 +5,7 @@
 
 for /r %%x in (*.pkm) do (
 	@echo "convert to png£º%%x"
-	etc1tool.exe %%x --decode -o %%x.png
+	Rem etc1tool.exe %%x --decode -o %%x.png
+	etcpack %%x export -ext PNG
 )
 pause
